@@ -1,0 +1,14 @@
+DefaultTransactionDefinition
+트랜잭션 전파
+격리수준
+제한시간
+읽기 전용
+
+PlatformTransactionManager 
+경계지정(getTransaction)
+
+
+DataSourceTransactionManager
+Connection의 트랜잭션 API를 이용해서 트랜잭션을 관리해주는 트랜잭션 매니저다. 
+이 트랜잭션 매니저를 사용하려면 트랜잭션을 적용할 DataSource 가 스프링의 빈으로 등록돼야 한다. 
+JDBC API를 이용해서 트랜잭션을 관리하는 데이터 액세스 기술인 JDBC와 iBatis SqlMap 으로 만든 DAO에 적용할 수 있다.
